@@ -11,7 +11,7 @@ import NotFound from './components/NotFound';
 import { GlobalStyle } from './GlobalStyles';
 
 const App = () => ( 
-  <Router>
+  <Router basename="/React-rmdb">
     <Header />
     <Routes>
       <Route path='/' element={<Home />} />

@@ -19,6 +19,7 @@ import { useMovieFetch } from "../hooks/useMovieFetch";
 import NoImage from '../images/no_image.jpg';
 const Movie = () => {
     const {movieID} = useParams();
+    console.log(movieID)
     const { state: movie, loading, error} = useMovieFetch(movieID);
 
     if(loading) return <Spinner />
