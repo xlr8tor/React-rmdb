@@ -34,13 +34,14 @@ export const useHomeFetch = () => {
 
     //Initial render and search
     useEffect(() => {
+        setState(initialState);
         fetchMovies(1)
     },[])
 
-    useEffect(()=>{
-        setState(initialState);
-        fetchMovies(1,searchTerm)
-    },[searchTerm]);
+    // useEffect(()=>{
+    //     setState(initialState);
+    //     fetchMovies(1,searchTerm)
+    // },[searchTerm]);
 
     useEffect(() => {
         if(!isLoadingMore) return
